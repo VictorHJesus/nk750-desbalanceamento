@@ -1,0 +1,140 @@
+{
+  "data_hora": "2026-10-15T15:27:59",
+  "software": "coleta_gui.py",
+  "rotulo": "CF02B",
+  "repeticao": 18,
+  "rpm_anotada": 858.0,
+  "rpm_tacometro": 855.5707744687512,
+  "obs": "furos(furo:g)=0:4.33",
+  "modulo": "cDAQ1Mod1",
+  "fs_pedida_hz": 5120.0,
+  "fs_real_hz": 5120.0,
+  "duracao_s": 30.0,
+  "tacometro": {
+    "canal": "ai3",
+    "ppr": 1,
+    "acoplamento": "AC",
+    "iepe": false,
+    "rpm": 855.5707744687512,
+    "rpm_desvio": 3.64227882559762,
+    "pulsos": 428,
+    "amplitude_V": 1.504720851534616
+  },
+  "posicoes": {
+    "ai0": "viga do pedestal 1 (sensor de carga 1, lado esquerdo da bancada), horizontal radial (perpendicular ao eixo do rotor), fixado com cera de abelha",
+    "ai1": "viga do pedestal 2 (sensor de carga 2, lado direito da bancada), horizontal radial (perpendicular ao eixo do rotor), fixado com cera de abelha"
+  },
+  "canais": {
+    "ai0": {
+      "tipo": "acelerometro",
+      "descricao": "viga do pedestal 1 (sensor de carga 1, lado esquerdo da bancada), horizontal radial (perpendicular ao eixo do rotor), fixado com cera de abelha",
+      "serie": "anonimizado",
+      "sensibilidade_mV_g": 10.05,
+      "iepe": true,
+      "excitacao_IEPE_A": 0.002,
+      "acoplamento": "AC"
+    },
+    "ai1": {
+      "tipo": "acelerometro",
+      "descricao": "viga do pedestal 2 (sensor de carga 2, lado direito da bancada), horizontal radial (perpendicular ao eixo do rotor), fixado com cera de abelha",
+      "serie": "anonimizado",
+      "sensibilidade_mV_g": 10.24,
+      "iepe": true,
+      "excitacao_IEPE_A": 0.002,
+      "acoplamento": "AC"
+    },
+    "ai3": {
+      "tipo": "tacometro",
+      "descricao": "fase/rpm: saida do sensor de rotacao (so ligar apos medir a tensao)",
+      "pulsos_por_volta": 1,
+      "acoplamento": "AC",
+      "iepe": false
+    }
+  },
+  "status": "valida",
+  "motivo_descarte": "",
+  "rpm_estimado_espectro": 1712.0019659608042,
+  "condicao": {
+    "massa_g": 4.33,
+    "raio_mm": 100.0,
+    "angulo_deg": 0.0,
+    "plano": "1",
+    "remontada": false,
+    "U_gmm": 433.0,
+    "e_gmm_kg": 78.72727272727273,
+    "U_sobre_U_mar": 39.36363636363637,
+    "U_sobre_U_per": 2.829531888155828
+  },
+  "referencias": {
+    "massa_rotor_kg": 5.5,
+    "grau_G": 2.5,
+    "e_mar_gmm_kg": 2.0,
+    "U_mar_gmm": 11.0,
+    "U_per_gmm": 153.02884615384616
+  },
+  "perfil": {
+    "operador": "anonimizado",
+    "massa_rotor_kg": "5.5",
+    "grau_G": "2.5",
+    "e_mar_gmm_kg": "2",
+    "dist_mancais_mm": "nao medido",
+    "pos_planos_mm": "nao medido",
+    "relacao_polias": "nao medido",
+    "sentido_rotacao": "nao medido",
+    "referencia_angular": "furo 0 com fita; numeracao dos furos cresce no sentido OPOSTO ao da rotacao; angulo = 22,5 graus x numero do furo (confirmado pelo ciclo C05: correcao calculada 5,38 g a 67,4 graus = furo 3)",
+    "fixacao_sensores": "nao medido",
+    "balanca": "nao medido",
+    "paquimetro": "nao medido",
+    "temperatura_C": "nao medido",
+    "umidade_pct": "nao medido",
+    "notas": ""
+  },
+  "ambiente": {
+    "python": "3.13.14",
+    "so": "Windows-11-10.0.26200-SP0",
+    "computador": "anonimizado",
+    "nidaqmx_python": "1.6.0",
+    "driver_nidaqmx": "26.5.0",
+    "modulo_produto": "NI 9234",
+    "modulo_serie": "anonimizado",
+    "chassi_produto": "cDAQ-9171",
+    "chassi_serie": "anonimizado"
+  },
+  "qc": {
+    "canais": {
+      "ai0": {
+        "rms_g": 0.5556758664513387,
+        "pico_g": 2.4921815094527355,
+        "offset_dc_g": -0.0009766637995724556,
+        "fracao_saturada": 0.0,
+        "rpm_estimado_espectro": 856.066747617762,
+        "razao_pico_mediana": 230.40147301706438,
+        "amp_1x_g": 0.005171115714410268
+      },
+      "ai1": {
+        "rms_g": 1.1172639012472916,
+        "pico_g": 4.357444454589842,
+        "offset_dc_g": -0.00019884833152389875,
+        "fracao_saturada": 0.0,
+        "rpm_estimado_espectro": 2567.9371843038466,
+        "razao_pico_mediana": 158.62381291435202,
+        "amp_1x_g": 0.00344214749675388
+      }
+    },
+    "alertas": [
+      "rpm estimado pelo espectro (1712) difere mais de 5% do rpm de referencia (858); com o rotor balanceado o 1x some e o estimador pode pegar um harmonico: confira amp_1x_g"
+    ],
+    "rpm_estimado_espectro": 1712.0019659608042
+  },
+  "csv_sha256": "640a84c8138e6a58c0ca085ad8865ae9cd15b405a427f7fe3fa50f0862d0adcb",
+  "nk700": {
+    "status": "sem leitura",
+    "rpm": 858.0,
+    "amplitude": 68.32,
+    "fase_deg": 31.0,
+    "ciclo": "CF02",
+    "massa_g": 4.74,
+    "angulo_deg": 73.0,
+    "limite_g": 0.77
+  }
+}

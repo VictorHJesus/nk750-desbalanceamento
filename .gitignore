@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+saida/
+coletas/
+testes/
+src/_ctl/
+src/coleta_gui_config.json
+src/perfil_sessao.json
+gui_dados_teste/
+gui_shot.png
+plano_estados.csv
+*.egg-info/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,4 @@
+ciclo,parafuso_fixo,excluir,nota
+CF05,2:5.24,,parafuso fixo de 5.24 g no furo 2 faz parte do rotor neste ciclo (estado inicial diferente)
+CF12,,1,arruela colada no rotor SEM furo (massa e angulo desconhecidos) = U0 diferente do rotor limpo; fora do ajuste que usa U0 unico
+CF13,,1,mesma arruela de CF12; alem disso o NK700 (15.57 g) e incompativel com a conta dos vetores (furos possivelmente anotados errado)
